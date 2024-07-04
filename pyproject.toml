@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "send-email-celery"
+version = "0.1.0"
+description = ""
+authors = ["yayo1983 <yazanenator@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+celery = {extras = ["redis"], version = "^5.4.0"}
+pydantic = {extras = ["email"], version = "^2.8.2"}
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
